@@ -1,8 +1,8 @@
-#1) Escribir una función que calcule el área de un círculo y otra que calcule el volumen de un
-#cilindro usando la primera función.
+# 1) Escribir una función que calcule el área de un círculo y otra que calcule el volumen de un
+# cilindro usando la primera función.
 # #import math #Importo libreria math para uso de pi
 #
-#INICIO
+# INICIO
 # def areaCirculo(radio):
 #     area = math.pi * pow(radio,2)
 #     #return print(f"El área del circulo es {area:.3f}")
@@ -24,13 +24,13 @@
 # print(f"El área del circulo es {aCirculo:.3f}")
 # print(f"El área del cilindro es: {aCilindro:.3f}")
 
-#FIN
+# FIN
 # -----------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------# -----------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------
-#2) Escribir una función que reciba una muestra de números en una lista y devuelva su media.
+# 2) Escribir una función que reciba una muestra de números en una lista y devuelva su media.
 
-#INICIO
+# INICIO
 # def numeros():
 #     cantidadNumeros = int(input("Ingrese la cantidad de números que desea promediar: "))
 #     total = 0
@@ -45,15 +45,15 @@
 #
 # numeros()
 
-#FIN
+# FIN
 # -----------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------
-#3) Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con
+# 3) Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con
 # cada palabra que contiene y su frecuencia. Escribir otra función que reciba el diccionario
 # generado con la función anterior y devuelva una tupla con la palabra más repetida y su
 # frecuencia.
 
-#INICIO
+# INICIO
 # import operator
 # cadenaCaracteres = str(input("Ingrese un texto: "))
 #
@@ -72,13 +72,13 @@
 # #Llamado a funciones
 # listaDePalabras =armadoDicc(cadenaCaracteres)
 # palabraMasRepetida(listaDePalabras)
-#FIN
+# FIN
 # -----------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------
-#4) Escribir una función que reciba otra función y una lista, y devuelva otra lista con el
-#resultado de aplicar la función dada a cada uno de los elementos de la lista.
+# 4) Escribir una función que reciba otra función y una lista, y devuelva otra lista con el
+# resultado de aplicar la función dada a cada uno de los elementos de la lista.
 
-#INICIO
+# INICIO
 # import math
 #
 # cadena = []
@@ -101,29 +101,29 @@
 #
 # aplicandoPI(cadena)
 
-#FIN
+# FIN
 # -----------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------
-#5) Escribir una función que reciba otra función booleana y una lista, y devuelva otra lista con
-#los elementos de la lista que devuelvan True al aplicarles la función booleana.
+# 5) Escribir una función que reciba otra función booleana y una lista, y devuelva otra lista con
+# los elementos de la lista que devuelvan True al aplicarles la función booleana.
 
-#INICIO
-# nombreCalles = ["Avellaneda","Rivadavia1266","Moreno","Machado2"]
-#
-# def validacion(nombre): #Funcion que valida la calle
-#     valido = nombre.isalpha()
-#     return valido
-#
-# def busqueda(nombre): #Funcion que itera la lista
-#     resultadoCalles = []
-#     for i in nombre:
-#         aprobacion = str(validacion(i))
-#         resultadoCalles.append(aprobacion)
-#     return resultadoCalles
-#
-# #Llamado a funcion
-# resultado = busqueda(nombreCalles)
-# resultadoBusqueda = zip(nombreCalles,resultado) #Une las listas intercaladas
-# print(tuple(resultadoBusqueda))
+# INICIO
+nombreCalles = ["Avellaneda","Rivadavia1266","Moreno","Machado2"]
 
-#FIN
+def validacion(nombre): #Funcion que valida la calle
+    valido = nombre.isalpha()
+    return valido
+
+def busqueda(nombre): #Funcion que itera la lista
+    resultadoCalles = []
+    for i in nombre:
+        aprobacion = str(validacion(i))
+        resultadoCalles.append(aprobacion)
+    return resultadoCalles
+
+#Llamado a funcion
+resultado = busqueda(nombreCalles)
+resultadoBusqueda = zip(nombreCalles,resultado) #Une las listas intercaladas
+print(tuple(resultadoBusqueda))
+
+# FIN

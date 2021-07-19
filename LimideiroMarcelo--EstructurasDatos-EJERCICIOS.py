@@ -233,8 +233,8 @@
 #                 loop = False
 #             else:
 #                 respuesta_ok = False
-
-#FIN
+#
+# FIN
 #----------------------------------------------------------------------------
 #----------------------------------------------------------------------------
 #7)Implementar una lista de precios que permita grabar el precio de un producto, consultar
